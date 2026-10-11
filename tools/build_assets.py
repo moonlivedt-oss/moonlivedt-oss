@@ -4,13 +4,18 @@
 Запуск: py -3.14 tools/build_assets.py
 """
 
+import hashlib
+import io
+import re
 from pathlib import Path
 
 from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
 LIB = Path("D:/Desktop/components/image")
 FONTS = Path("D:/Desktop/components/Les/proto/fonts")
-OUT = Path(__file__).resolve().parent.parent / "assets"
+ROOT = Path(__file__).resolve().parent.parent
+OUT = ROOT / "assets"
+README = ROOT / "README.md"
 
 BANNER = (1600, 440)
 CARD = (800, 400)
@@ -51,6 +56,22 @@ COVERS = [
     "contest-reminder",
     "site-builder",
 ]
+
+
+def save(im, stem, **opts):
+    """Пишет assets/<stem>-<отпечаток>.webp: новое содержимое - новое имя, браузер не покажет старую картинку
+    из кэша. Прежние версии удаляются, ссылки в README переписываются."""
+    buf = io.BytesIO()
+    im.save(buf, "WEBP", method=6, **opts)
+    data = buf.getvalue()
+    name = f"{stem}-{hashlib.sha1(data).hexdigest()[:7]}.webp"
+    pattern = re.compile(rf"{re.escape(stem)}(-[0-9a-f]{{7}})?\.webp")
+    for old in OUT.glob(f"{stem}*.webp"):
+        if pattern.fullmatch(old.name) and old.name != name:
+            old.unlink()
+    (OUT / name).write_bytes(data)
+    text = README.read_text(encoding="utf-8")
+    README.write_text(re.sub(rf"assets/{pattern.pattern}", f"assets/{name}", text), encoding="utf-8")
 
 
 def font(name, size):
@@ -122,12 +143,12 @@ def build_banner(theme, t):
         d.text((x, y), line, font=body, fill=t["text"])
         y += 44
 
-    rounded(im, RADIUS).save(OUT / f"banner-{theme}.webp", quality=90, method=6)
+    save(rounded(im, RADIUS), f"banner-{theme}", quality=90)
 
 
 def build_cover(name):
     im = Image.open(LIB / f"06 Иллюстрации/Обложки/cover-{name}.webp").convert("RGB")
-    rounded(cover_crop(im, CARD), RADIUS).save(OUT / f"cover-{name}.webp", quality=88, method=6)
+    save(rounded(cover_crop(im, CARD), RADIUS), f"cover-{name}", quality=88)
 
 
 # Мелкие картинки для README: маскоты у разделов и ярлыки статуса (обрезка по непрозрачному).
@@ -144,7 +165,7 @@ def build_extra(name, src, height):
     im = Image.open(LIB / src).convert("RGBA")
     im = im.crop(im.getchannel("A").point(lambda a: 255 if a > 16 else 0).getbbox())
     im = im.resize((round(im.width * height / im.height), height), Image.LANCZOS)
-    im.save(OUT / f"{name}.webp", quality=92, method=6)
+    save(im, name, quality=92)
 
 
 def build_divider(theme, color):
@@ -170,7 +191,7 @@ def build_divider(theme, color):
     md.ellipse((cx - r + 9 * s, cy - r - 3 * s, cx + r + 9 * s, cy + r - 3 * s), fill=0)
     fill = Image.new("RGBA", im.size, color + (255,))
     im.paste(fill, (0, 0), moon)
-    im.resize((w, h), Image.LANCZOS).save(OUT / f"divider-{theme}.webp", quality=92, method=6)
+    save(im.resize((w, h), Image.LANCZOS), f"divider-{theme}", quality=92)
 
 
 def main():
