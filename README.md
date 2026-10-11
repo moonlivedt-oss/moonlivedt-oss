@@ -1,11 +1,9 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/moonlivedt-oss/photosMOONprojects/main/03%20%D0%9C%D0%B0%D1%81%D0%BA%D0%BE%D1%82%D1%8B/%D0%98%D0%B7%20%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%BE%D0%B2/%D0%9F%D1%80%D0%B8%D0%B2%D0%B5%D1%82.webp" alt="Маскот машет лапой" width="150">
-
-# Привет! Это Moon
-
-Делаю инструменты, которые экономят время: оформление и запуск VS Code, библиотеку картинок с ИИ-помощниками,<br>
-ассеты для Unreal Engine, а ещё - конкурсные проекты, игры и сайты.
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.webp">
+  <img src="assets/banner-light.webp" alt="Moon: инструменты, которые экономят время. Маскот машет лапой" width="100%">
+</picture>
 
 ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)
 ![PyQt6](https://img.shields.io/badge/PyQt6-41CD52?logo=qt&logoColor=white)
@@ -22,16 +20,51 @@
 
 ## Главные проекты
 
+<table>
+<tr>
+<td width="50%" valign="top">
+<a href="https://github.com/moonlivedt-oss/photosMOONprojects"><img src="assets/cover-library.webp" alt="Библиотека картинок" width="100%"></a><br>
+<b><a href="https://github.com/moonlivedt-oss/photosMOONprojects">Библиотека картинок</a></b><br>
+<sub>своя библиотека иконок, наклеек и фонов: нарезка сгенерированных листов, поиск по смыслу, ИИ-помощники через MCP, ассеты Unreal Engine с 3D-просмотром</sub>
+</td>
+<td width="50%" valign="top">
+<a href="https://github.com/moonlivedt-oss/moon-core"><img src="assets/cover-moon-core.webp" alt="Moon Core" width="100%"></a><br>
+<b><a href="https://github.com/moonlivedt-oss/moon-core">Moon Core</a></b><br>
+<sub>конструктор интерфейса VS Code: кликни по элементу - убери, увеличь, перекрась; профили вида, живые сниппеты, пипетка</sub>
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+<a href="https://github.com/moonlivedt-oss/custom_VScode"><img src="assets/cover-custom-bg.webp" alt="MoonLight custom-bg" width="100%"></a><br>
+<b><a href="https://github.com/moonlivedt-oss/custom_VScode">MoonLight custom-bg</a></b><br>
+<sub>живой фон и панель оформления VS Code: картинки по зонам, наборы с палитрой, генеративные фоны, слайдшоу</sub>
+</td>
+<td width="50%" valign="top">
+<a href="https://github.com/moonlivedt-oss/NetworkDoctor"><img src="assets/cover-network-doctor.webp" alt="Сетевой доктор" width="100%"></a><br>
+<b><a href="https://github.com/moonlivedt-oss/NetworkDoctor">Сетевой доктор</a></b><br>
+<sub>чинит интернет в Windows, когда после VPN-туннелей и прокси связь «слетает»: диагностика, починка, мониторинг</sub>
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+<a href="https://github.com/moonlivedt-oss/AutoTranslatorMoon"><img src="assets/cover-auto-translator.webp" alt="AutoTranslator" width="100%"></a><br>
+<b><a href="https://github.com/moonlivedt-oss/AutoTranslatorMoon">AutoTranslator</a></b><br>
+<sub>плавающий переводчик поверх окон: OCR экрана, живой перевод новелл и игр, мост для Ren'Py, офлайн-режим</sub>
+</td>
+<td width="50%" valign="top">
+<a href="https://github.com/moonlivedt-oss/ContestReminderMoon"><img src="assets/cover-contest-reminder.webp" alt="ContestReminder" width="100%"></a><br>
+<b><a href="https://github.com/moonlivedt-oss/ContestReminderMoon">ContestReminder</a></b><br>
+<sub>трей-напоминалка о конкурсах: ловит пост из буфера или с экрана, сама находит дедлайн и напоминает</sub>
+</td>
+</tr>
+</table>
+
+### Ещё инструменты
+
 | Проект | Что делает |
 |---|---|
-| <img src="https://raw.githubusercontent.com/moonlivedt-oss/photosMOONprojects/main/04%20%D0%98%D0%BA%D0%BE%D0%BD%D0%BA%D0%B8/%D0%A4%D0%B0%D0%B9%D0%BB%D1%8B/%D0%A4%D0%B8%D0%BE%D0%BB%D0%B5%D1%82%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BD%D0%BE%D1%87%D1%8C/image-file.webp" width="28" height="28" alt=""><br>**[Библиотека картинок](https://github.com/moonlivedt-oss/photosMOONprojects)** | своя библиотека иконок, наклеек и фонов: нарезка сгенерированных листов, поиск по смыслу, ИИ-помощники через MCP, ассеты Unreal Engine с 3D-просмотром |
-| <img src="https://raw.githubusercontent.com/moonlivedt-oss/photosMOONprojects/main/04%20%D0%98%D0%BA%D0%BE%D0%BD%D0%BA%D0%B8/%D0%98%D0%BD%D1%82%D0%B5%D1%80%D1%84%D0%B5%D0%B9%D1%81%20-%20%D0%B4%D0%B5%D0%B9%D1%81%D1%82%D0%B2%D0%B8%D1%8F/%D0%A4%D0%B8%D0%BE%D0%BB%D0%B5%D1%82%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BD%D0%BE%D1%87%D1%8C/paint-brush.webp" width="28" height="28" alt=""><br>**[Moon Core](https://github.com/moonlivedt-oss/moon-core)** | конструктор интерфейса VS Code: кликни по элементу - убери, увеличь, перекрась; профили вида, живые сниппеты, пипетка |
-| <img src="https://raw.githubusercontent.com/moonlivedt-oss/photosMOONprojects/main/04%20%D0%98%D0%BA%D0%BE%D0%BD%D0%BA%D0%B8/%D0%9F%D0%BE%D0%B3%D0%BE%D0%B4%D0%B0/%D0%A4%D0%B8%D0%BE%D0%BB%D0%B5%D1%82%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BD%D0%BE%D1%87%D1%8C/moon-stars.webp" width="28" height="28" alt=""><br>**[MoonLight custom-bg](https://github.com/moonlivedt-oss/custom_VScode)** | живой фон и панель оформления VS Code: картинки по зонам, наборы с палитрой, генеративные фоны, слайдшоу |
 | <img src="https://raw.githubusercontent.com/moonlivedt-oss/photosMOONprojects/main/04%20%D0%98%D0%BA%D0%BE%D0%BD%D0%BA%D0%B8/%D0%AF%D0%B7%D1%8B%D0%BA/%D0%A4%D0%B8%D0%BE%D0%BB%D0%B5%D1%82%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BD%D0%BE%D1%87%D1%8C/open-dictionary.webp" width="28" height="28" alt=""><br>**[Документация C++](https://github.com/moonlivedt-oss/cpp-panel-Moon)** | справочник проекта в VS Code: плавающее окно-читалка и боковая панель, поиск, прогресс изучения |
 | <img src="https://raw.githubusercontent.com/moonlivedt-oss/photosMOONprojects/main/04%20%D0%98%D0%BA%D0%BE%D0%BD%D0%BA%D0%B8/%D0%92%D1%80%D0%B5%D0%BC%D1%8F%20%D0%B8%20%D0%BA%D0%BE%D0%BD%D0%BA%D1%83%D1%80%D1%81%D1%8B/%D0%A4%D0%B8%D0%BE%D0%BB%D0%B5%D1%82%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BD%D0%BE%D1%87%D1%8C/rocket.webp" width="28" height="28" alt=""><br>**[VS Code Launcher](https://github.com/moonlivedt-oss/VSCLwMoon)** | запускает VS Code только с нужными стеками расширений - тяжёлые языковые серверы не грузятся |
-| <img src="https://raw.githubusercontent.com/moonlivedt-oss/photosMOONprojects/main/04%20%D0%98%D0%BA%D0%BE%D0%BD%D0%BA%D0%B8/%D0%A1%D0%B5%D1%82%D1%8C/%D0%A4%D0%B8%D0%BE%D0%BB%D0%B5%D1%82%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BD%D0%BE%D1%87%D1%8C/first-aid-kit.webp" width="28" height="28" alt=""><br>**[Сетевой доктор](https://github.com/moonlivedt-oss/NetworkDoctor)** | чинит интернет в Windows, когда после VPN-туннелей и прокси связь «слетает»: диагностика, починка, мониторинг |
-| <img src="https://raw.githubusercontent.com/moonlivedt-oss/photosMOONprojects/main/04%20%D0%98%D0%BA%D0%BE%D0%BD%D0%BA%D0%B8/%D0%AF%D0%B7%D1%8B%D0%BA/%D0%A4%D0%B8%D0%BE%D0%BB%D0%B5%D1%82%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BD%D0%BE%D1%87%D1%8C/globe-arrows.webp" width="28" height="28" alt=""><br>**[AutoTranslator](https://github.com/moonlivedt-oss/AutoTranslatorMoon)** | плавающий переводчик поверх окон: OCR экрана, живой перевод новелл и игр, мост для Ren'Py, офлайн-режим |
-| <img src="https://raw.githubusercontent.com/moonlivedt-oss/photosMOONprojects/main/04%20%D0%98%D0%BA%D0%BE%D0%BD%D0%BA%D0%B8/%D0%92%D1%80%D0%B5%D0%BC%D1%8F%20%D0%B8%20%D0%BA%D0%BE%D0%BD%D0%BA%D1%83%D1%80%D1%81%D1%8B/%D0%A4%D0%B8%D0%BE%D0%BB%D0%B5%D1%82%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BD%D0%BE%D1%87%D1%8C/ringing-bell.webp" width="28" height="28" alt=""><br>**[ContestReminder](https://github.com/moonlivedt-oss/ContestReminderMoon)** | трей-напоминалка о конкурсах: ловит пост из буфера или с экрана, сама находит дедлайн и напоминает |
 | <img src="https://raw.githubusercontent.com/moonlivedt-oss/photosMOONprojects/main/04%20%D0%98%D0%BA%D0%BE%D0%BD%D0%BA%D0%B8/%D0%9A%D0%BE%D0%B4%20%D0%B8%20VS%20Code/%D0%A4%D0%B8%D0%BE%D0%BB%D0%B5%D1%82%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BD%D0%BE%D1%87%D1%8C/puzzle-shaped-extension.webp" width="28" height="28" alt=""><br>**[One Page Site Builder](https://github.com/moonlivedt-oss/PlagWebMoon)** | расширение VS Code: одностраничный сайт за пару минут без кода - мастер, 25 типов секций, живой предпросмотр |
 
 ## Конкурсы, игры и сайты
