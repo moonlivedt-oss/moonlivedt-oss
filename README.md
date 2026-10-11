@@ -27,39 +27,54 @@
 
 <table>
 <tr>
-<td width="50%" valign="top">
+<td width="33%" valign="top">
 <a href="https://github.com/moonlivedt-oss/photosMOONprojects"><img src="assets/cover-library.webp" alt="Библиотека картинок" width="100%"></a><br>
-<b><a href="https://github.com/moonlivedt-oss/photosMOONprojects">Библиотека картинок</a></b>&nbsp;<img src="assets/tag-new.webp" height="20" alt="новое" align="top"><br>
+<b><a href="https://github.com/moonlivedt-oss/photosMOONprojects">Библиотека картинок</a></b>&nbsp;<img src="assets/tag-new.webp" height="18" alt="новое" align="top"><br>
 <sub>своя библиотека иконок, наклеек и фонов: нарезка сгенерированных листов, поиск по смыслу, ИИ-помощники через MCP, ассеты Unreal Engine с 3D-просмотром</sub>
 </td>
-<td width="50%" valign="top">
+<td width="33%" valign="top">
 <a href="https://github.com/moonlivedt-oss/moon-core"><img src="assets/cover-moon-core.webp" alt="Moon Core" width="100%"></a><br>
-<b><a href="https://github.com/moonlivedt-oss/moon-core">Moon Core</a></b>&nbsp;<img src="assets/tag-beta.webp" height="20" alt="бета" align="top"><br>
+<b><a href="https://github.com/moonlivedt-oss/moon-core">Moon Core</a></b>&nbsp;<img src="assets/tag-beta.webp" height="18" alt="бета" align="top"><br>
 <sub>конструктор интерфейса VS Code: кликни по элементу - убери, увеличь, перекрась; профили вида, живые сниппеты, пипетка</sub>
 </td>
-</tr>
-<tr>
-<td width="50%" valign="top">
+<td width="33%" valign="top">
 <a href="https://github.com/moonlivedt-oss/custom_VScode"><img src="assets/cover-custom-bg.webp" alt="MoonLight custom-bg" width="100%"></a><br>
 <b><a href="https://github.com/moonlivedt-oss/custom_VScode">MoonLight custom-bg</a></b><br>
 <sub>живой фон и панель оформления VS Code: картинки по зонам, наборы с палитрой, генеративные фоны, слайдшоу</sub>
 </td>
-<td width="50%" valign="top">
+</tr>
+<tr>
+<td width="33%" valign="top">
+<a href="https://github.com/moonlivedt-oss/cpp-panel-Moon"><img src="assets/cover-cpp-docs.webp" alt="Документация C++" width="100%"></a><br>
+<b><a href="https://github.com/moonlivedt-oss/cpp-panel-Moon">Документация C++</a></b><br>
+<sub>справочник проекта в VS Code: плавающее окно-читалка и боковая панель, поиск, прогресс изучения</sub>
+</td>
+<td width="33%" valign="top">
+<a href="https://github.com/moonlivedt-oss/VSCLwMoon"><img src="assets/cover-vscode-launcher.webp" alt="VS Code Launcher" width="100%"></a><br>
+<b><a href="https://github.com/moonlivedt-oss/VSCLwMoon">VS Code Launcher</a></b><br>
+<sub>запускает VS Code только с нужными стеками расширений - тяжёлые языковые серверы не грузятся</sub>
+</td>
+<td width="33%" valign="top">
 <a href="https://github.com/moonlivedt-oss/NetworkDoctor"><img src="assets/cover-network-doctor.webp" alt="Сетевой доктор" width="100%"></a><br>
 <b><a href="https://github.com/moonlivedt-oss/NetworkDoctor">Сетевой доктор</a></b><br>
 <sub>чинит интернет в Windows, когда после VPN-туннелей и прокси связь «слетает»: диагностика, починка, мониторинг</sub>
 </td>
 </tr>
 <tr>
-<td width="50%" valign="top">
+<td width="33%" valign="top">
 <a href="https://github.com/moonlivedt-oss/AutoTranslatorMoon"><img src="assets/cover-auto-translator.webp" alt="AutoTranslator" width="100%"></a><br>
-<b><a href="https://github.com/moonlivedt-oss/AutoTranslatorMoon">AutoTranslator</a></b>&nbsp;<img src="assets/tag-new.webp" height="20" alt="новое" align="top"><br>
+<b><a href="https://github.com/moonlivedt-oss/AutoTranslatorMoon">AutoTranslator</a></b>&nbsp;<img src="assets/tag-new.webp" height="18" alt="новое" align="top"><br>
 <sub>плавающий переводчик поверх окон: OCR экрана, живой перевод новелл и игр, мост для Ren'Py, офлайн-режим</sub>
 </td>
-<td width="50%" valign="top">
+<td width="33%" valign="top">
 <a href="https://github.com/moonlivedt-oss/ContestReminderMoon"><img src="assets/cover-contest-reminder.webp" alt="ContestReminder" width="100%"></a><br>
-<b><a href="https://github.com/moonlivedt-oss/ContestReminderMoon">ContestReminder</a></b>&nbsp;<img src="assets/tag-new.webp" height="20" alt="новое" align="top"><br>
+<b><a href="https://github.com/moonlivedt-oss/ContestReminderMoon">ContestReminder</a></b>&nbsp;<img src="assets/tag-new.webp" height="18" alt="новое" align="top"><br>
 <sub>трей-напоминалка о конкурсах: ловит пост из буфера или с экрана, сама находит дедлайн и напоминает</sub>
+</td>
+<td width="33%" valign="top">
+<a href="https://github.com/moonlivedt-oss/PlagWebMoon"><img src="assets/cover-site-builder.webp" alt="One Page Site Builder" width="100%"></a><br>
+<b><a href="https://github.com/moonlivedt-oss/PlagWebMoon">One Page Site Builder</a></b><br>
+<sub>расширение VS Code: одностраничный сайт за пару минут без кода - мастер, 25 типов секций, живой предпросмотр</sub>
 </td>
 </tr>
 </table>
@@ -69,16 +84,6 @@
 <br>
 <img src="https://raw.githubusercontent.com/moonlivedt-oss/photosMOONprojects/main/_docs/screenshots/demo.webp" alt="Лист наклеек режется по сетке, поиск по смыслу находит картинки, модель вращается в 3D" width="100%">
 </details>
-
-<img src="assets/mascot-wrench.webp" align="right" width="64" alt="">
-
-### Ещё инструменты
-
-| Проект | Что делает |
-|---|---|
-| <img src="https://raw.githubusercontent.com/moonlivedt-oss/photosMOONprojects/main/04%20%D0%98%D0%BA%D0%BE%D0%BD%D0%BA%D0%B8/%D0%AF%D0%B7%D1%8B%D0%BA/%D0%A4%D0%B8%D0%BE%D0%BB%D0%B5%D1%82%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BD%D0%BE%D1%87%D1%8C/open-dictionary.webp" width="28" height="28" alt=""><br>**[Документация C++](https://github.com/moonlivedt-oss/cpp-panel-Moon)** | справочник проекта в VS Code: плавающее окно-читалка и боковая панель, поиск, прогресс изучения |
-| <img src="https://raw.githubusercontent.com/moonlivedt-oss/photosMOONprojects/main/04%20%D0%98%D0%BA%D0%BE%D0%BD%D0%BA%D0%B8/%D0%92%D1%80%D0%B5%D0%BC%D1%8F%20%D0%B8%20%D0%BA%D0%BE%D0%BD%D0%BA%D1%83%D1%80%D1%81%D1%8B/%D0%A4%D0%B8%D0%BE%D0%BB%D0%B5%D1%82%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BD%D0%BE%D1%87%D1%8C/rocket.webp" width="28" height="28" alt=""><br>**[VS Code Launcher](https://github.com/moonlivedt-oss/VSCLwMoon)** | запускает VS Code только с нужными стеками расширений - тяжёлые языковые серверы не грузятся |
-| <img src="https://raw.githubusercontent.com/moonlivedt-oss/photosMOONprojects/main/04%20%D0%98%D0%BA%D0%BE%D0%BD%D0%BA%D0%B8/%D0%9A%D0%BE%D0%B4%20%D0%B8%20VS%20Code/%D0%A4%D0%B8%D0%BE%D0%BB%D0%B5%D1%82%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BD%D0%BE%D1%87%D1%8C/puzzle-shaped-extension.webp" width="28" height="28" alt=""><br>**[One Page Site Builder](https://github.com/moonlivedt-oss/PlagWebMoon)** | расширение VS Code: одностраничный сайт за пару минут без кода - мастер, 25 типов секций, живой предпросмотр |
 
 <img src="assets/mascot-joy.webp" align="right" width="64" alt="">
 

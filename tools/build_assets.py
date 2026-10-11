@@ -6,7 +6,7 @@
 
 from pathlib import Path
 
-from PIL import Image, ImageDraw, ImageEnhance, ImageFilter, ImageFont
+from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
 LIB = Path("D:/Desktop/components/image")
 FONTS = Path("D:/Desktop/components/Les/proto/fonts")
@@ -39,30 +39,18 @@ THEMES = {
 
 MASCOT = "03 Маскоты/Новый стиль/mascot-waving-goodbye-one.webp"
 
-COVERS = {
-    # имя: (источник, якорь кадра по x 0..1, по y 0..1, обрезка до кадрирования или None[, яркость])
-    "library": ("_docs/screenshots/hero.webp", 0.5, 0.5, (300, 132, 1036, 500)),
-    "moon-core": ("06 Иллюстрации/Обложки/cover-moon-core.webp", 0.5, 0.5, None),
-    "custom-bg": ("06 Иллюстрации/Обложки/Кот и VS Code.webp", 0.5, 0.5, None, 1.9),
-    "network-doctor": (
-        "06 Иллюстрации/Обложки/Обложка NetworkDoctor.webp",
-        1.0,
-        0.5,
-        None,
-    ),
-    "auto-translator": (
-        "06 Иллюстрации/Обложки/Обложка AutoTranslator.webp",
-        0.85,
-        0.5,
-        None,
-    ),
-    "contest-reminder": (
-        "06 Иллюстрации/Обложки/Обложка ContestReminder.webp",
-        0.9,
-        0.5,
-        None,
-    ),
-}
+# Обложки проектов: 06 Иллюстрации/Обложки/cover-<имя>.webp (промпты - tools/cover-prompts.md).
+COVERS = [
+    "library",
+    "moon-core",
+    "custom-bg",
+    "cpp-docs",
+    "vscode-launcher",
+    "network-doctor",
+    "auto-translator",
+    "contest-reminder",
+    "site-builder",
+]
 
 
 def font(name, size):
@@ -92,7 +80,7 @@ def rounded(im, radius):
 
 def left_shade(size, color, alpha):
     """Плавное затемнение (или высветление) слева под текст."""
-    w, h = size
+    w = size[0]
     grad = Image.new("L", (w, 1))
     for x in range(w):
         t = x / (w * 0.8)
@@ -137,24 +125,14 @@ def build_banner(theme, t):
     rounded(im, RADIUS).save(OUT / f"banner-{theme}.webp", quality=90, method=6)
 
 
-def build_cover(name, src, ax, ay, box, bright=1.0):
-    # Новая обложка в общей манере (tools/cover-prompts.md) заменяет временную целиком.
-    fresh = f"06 Иллюстрации/Обложки/cover-{name}.webp"
-    if (LIB / fresh).exists():
-        src, ax, ay, box, bright = fresh, 0.5, 0.5, None, 1.0
-    im = Image.open(LIB / src).convert("RGB")
-    if box:
-        im = im.crop(box)
-    if bright != 1.0:
-        im = ImageEnhance.Brightness(im).enhance(bright)
-    im = cover_crop(im, CARD, ax, ay)
-    rounded(im, RADIUS).save(OUT / f"cover-{name}.webp", quality=88, method=6)
+def build_cover(name):
+    im = Image.open(LIB / f"06 Иллюстрации/Обложки/cover-{name}.webp").convert("RGB")
+    rounded(cover_crop(im, CARD), RADIUS).save(OUT / f"cover-{name}.webp", quality=88, method=6)
 
 
 # Мелкие картинки для README: маскоты у разделов и ярлыки статуса (обрезка по непрозрачному).
 EXTRAS = {
     "mascot-point": ("03 Маскоты/Новый стиль/mascot-pointing-left-whole.webp", 200),
-    "mascot-wrench": ("03 Маскоты/Новый стиль/mascot-holding-big-wrench.webp", 200),
     "mascot-joy": ("03 Маскоты/Новый стиль/mascot-jumping-joy-arms.webp", 200),
     "mascot-tea": ("03 Маскоты/Новый стиль/mascot-drinking-tea-big.webp", 200),
     "tag-new": ("02 Наклейки/Ярлыки для README/Фиолетовая ночь/tag-new.webp", 60),
@@ -199,8 +177,8 @@ def main():
     OUT.mkdir(exist_ok=True)
     for theme, t in THEMES.items():
         build_banner(theme, t)
-    for name, spec in COVERS.items():
-        build_cover(name, *spec)
+    for name in COVERS:
+        build_cover(name)
     for name, (src, height) in EXTRAS.items():
         build_extra(name, src, height)
     build_divider("dark", (203, 166, 247))
