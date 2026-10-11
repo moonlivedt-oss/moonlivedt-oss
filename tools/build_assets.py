@@ -138,6 +138,10 @@ def build_banner(theme, t):
 
 
 def build_cover(name, src, ax, ay, box, bright=1.0):
+    # Новая обложка в общей манере (tools/cover-prompts.md) заменяет временную целиком.
+    fresh = f"06 Иллюстрации/Обложки/cover-{name}.webp"
+    if (LIB / fresh).exists():
+        src, ax, ay, box, bright = fresh, 0.5, 0.5, None, 1.0
     im = Image.open(LIB / src).convert("RGB")
     if box:
         im = im.crop(box)
@@ -147,12 +151,60 @@ def build_cover(name, src, ax, ay, box, bright=1.0):
     rounded(im, RADIUS).save(OUT / f"cover-{name}.webp", quality=88, method=6)
 
 
+# Мелкие картинки для README: маскоты у разделов и ярлыки статуса (обрезка по непрозрачному).
+EXTRAS = {
+    "mascot-point": ("03 Маскоты/Новый стиль/mascot-pointing-left-whole.webp", 200),
+    "mascot-wrench": ("03 Маскоты/Новый стиль/mascot-holding-big-wrench.webp", 200),
+    "mascot-joy": ("03 Маскоты/Новый стиль/mascot-jumping-joy-arms.webp", 200),
+    "mascot-tea": ("03 Маскоты/Новый стиль/mascot-drinking-tea-big.webp", 200),
+    "tag-new": ("02 Наклейки/Ярлыки для README/Фиолетовая ночь/tag-new.webp", 60),
+    "tag-beta": ("02 Наклейки/Ярлыки для README/Фиолетовая ночь/tag-beta.webp", 60),
+}
+
+
+def build_extra(name, src, height):
+    im = Image.open(LIB / src).convert("RGBA")
+    im = im.crop(im.getchannel("A").point(lambda a: 255 if a > 16 else 0).getbbox())
+    im = im.resize((round(im.width * height / im.height), height), Image.LANCZOS)
+    im.save(OUT / f"{name}.webp", quality=92, method=6)
+
+
+def build_divider(theme, color):
+    """Тонкая линия с растворением к краям и полумесяцем посередине."""
+    w, h, s = 1600, 40, 4
+    im = Image.new("RGBA", (w * s, h * s), (0, 0, 0, 0))
+    line = Image.new("L", (w * s, 1))
+    for x in range(w * s):
+        t = abs(x / (w * s) - 0.5) * 2
+        line.putpixel((x, 0), round(255 * max(0.0, 1 - t) ** 1.4))
+    band = Image.new("RGBA", (w * s, 3 * s), color + (255,))
+    band.putalpha(line.resize((w * s, 3 * s)))
+    cy = h * s // 2
+    gap = 40 * s
+    im.alpha_composite(band, (0, cy - band.height // 2))
+    d = ImageDraw.Draw(im)
+    d.rectangle((w * s // 2 - gap, 0, w * s // 2 + gap, h * s), fill=(0, 0, 0, 0))
+    r = 13 * s
+    cx = w * s // 2
+    moon = Image.new("L", im.size, 0)
+    md = ImageDraw.Draw(moon)
+    md.ellipse((cx - r, cy - r, cx + r, cy + r), fill=255)
+    md.ellipse((cx - r + 9 * s, cy - r - 3 * s, cx + r + 9 * s, cy + r - 3 * s), fill=0)
+    fill = Image.new("RGBA", im.size, color + (255,))
+    im.paste(fill, (0, 0), moon)
+    im.resize((w, h), Image.LANCZOS).save(OUT / f"divider-{theme}.webp", quality=92, method=6)
+
+
 def main():
     OUT.mkdir(exist_ok=True)
     for theme, t in THEMES.items():
         build_banner(theme, t)
     for name, spec in COVERS.items():
         build_cover(name, *spec)
+    for name, (src, height) in EXTRAS.items():
+        build_extra(name, src, height)
+    build_divider("dark", (203, 166, 247))
+    build_divider("light", (136, 57, 239))
     for f in sorted(OUT.glob("*.webp")):
         print(f.name, f.stat().st_size // 1024, "КБ")
 

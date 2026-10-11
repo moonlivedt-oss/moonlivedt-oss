@@ -5,18 +5,23 @@
   <img src="assets/banner-light.webp" alt="Moon: инструменты, которые экономят время. Маскот машет лапой" width="100%">
 </picture>
 
-![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)
-![PyQt6](https://img.shields.io/badge/PyQt6-41CD52?logo=qt&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
-![VS Code](https://img.shields.io/badge/VS%20Code%20API-007ACC?logo=visualstudiocode&logoColor=white)
-![Unreal Engine](https://img.shields.io/badge/Unreal%20Engine-313244?logo=unrealengine&logoColor=white)
-![Godot](https://img.shields.io/badge/Godot-478CBF?logo=godotengine&logoColor=white)
-![Vue](https://img.shields.io/badge/Vue-4FC08D?logo=vuedotjs&logoColor=white)
-![MCP](https://img.shields.io/badge/MCP-ИИ--помощники-d97757)
+![Python](https://img.shields.io/badge/Python-313244?style=flat-square&logo=python&logoColor=FFD43B)
+![PyQt6](https://img.shields.io/badge/PyQt6-313244?style=flat-square&logo=qt&logoColor=41CD52)
+![JavaScript](https://img.shields.io/badge/JavaScript-313244?style=flat-square&logo=javascript&logoColor=F7DF1E)
+![VS Code](https://img.shields.io/badge/VS%20Code%20API-313244?style=flat-square&logo=visualstudiocode&logoColor=3FA9F5)
+![Unreal Engine](https://img.shields.io/badge/Unreal%20Engine-313244?style=flat-square&logo=unrealengine&logoColor=FFFFFF)
+![Godot](https://img.shields.io/badge/Godot-313244?style=flat-square&logo=godotengine&logoColor=6FB3E8)
+![Vue](https://img.shields.io/badge/Vue-313244?style=flat-square&logo=vuedotjs&logoColor=4FC08D)
+![MCP](https://img.shields.io/badge/MCP-ИИ--помощники-313244?style=flat-square&labelColor=8839ef)
 
 </div>
 
----
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/divider-dark.webp">
+  <img src="assets/divider-light.webp" alt="" width="100%">
+</picture>
+
+<img src="assets/mascot-point.webp" align="right" width="72" alt="">
 
 ## Главные проекты
 
@@ -24,12 +29,12 @@
 <tr>
 <td width="50%" valign="top">
 <a href="https://github.com/moonlivedt-oss/photosMOONprojects"><img src="assets/cover-library.webp" alt="Библиотека картинок" width="100%"></a><br>
-<b><a href="https://github.com/moonlivedt-oss/photosMOONprojects">Библиотека картинок</a></b><br>
+<b><a href="https://github.com/moonlivedt-oss/photosMOONprojects">Библиотека картинок</a></b>&nbsp;<img src="assets/tag-new.webp" height="20" alt="новое" align="top"><br>
 <sub>своя библиотека иконок, наклеек и фонов: нарезка сгенерированных листов, поиск по смыслу, ИИ-помощники через MCP, ассеты Unreal Engine с 3D-просмотром</sub>
 </td>
 <td width="50%" valign="top">
 <a href="https://github.com/moonlivedt-oss/moon-core"><img src="assets/cover-moon-core.webp" alt="Moon Core" width="100%"></a><br>
-<b><a href="https://github.com/moonlivedt-oss/moon-core">Moon Core</a></b><br>
+<b><a href="https://github.com/moonlivedt-oss/moon-core">Moon Core</a></b>&nbsp;<img src="assets/tag-beta.webp" height="20" alt="бета" align="top"><br>
 <sub>конструктор интерфейса VS Code: кликни по элементу - убери, увеличь, перекрась; профили вида, живые сниппеты, пипетка</sub>
 </td>
 </tr>
@@ -48,16 +53,24 @@
 <tr>
 <td width="50%" valign="top">
 <a href="https://github.com/moonlivedt-oss/AutoTranslatorMoon"><img src="assets/cover-auto-translator.webp" alt="AutoTranslator" width="100%"></a><br>
-<b><a href="https://github.com/moonlivedt-oss/AutoTranslatorMoon">AutoTranslator</a></b><br>
+<b><a href="https://github.com/moonlivedt-oss/AutoTranslatorMoon">AutoTranslator</a></b>&nbsp;<img src="assets/tag-new.webp" height="20" alt="новое" align="top"><br>
 <sub>плавающий переводчик поверх окон: OCR экрана, живой перевод новелл и игр, мост для Ren'Py, офлайн-режим</sub>
 </td>
 <td width="50%" valign="top">
 <a href="https://github.com/moonlivedt-oss/ContestReminderMoon"><img src="assets/cover-contest-reminder.webp" alt="ContestReminder" width="100%"></a><br>
-<b><a href="https://github.com/moonlivedt-oss/ContestReminderMoon">ContestReminder</a></b><br>
+<b><a href="https://github.com/moonlivedt-oss/ContestReminderMoon">ContestReminder</a></b>&nbsp;<img src="assets/tag-new.webp" height="20" alt="новое" align="top"><br>
 <sub>трей-напоминалка о конкурсах: ловит пост из буфера или с экрана, сама находит дедлайн и напоминает</sub>
 </td>
 </tr>
 </table>
+
+<details>
+<summary><b>Библиотека картинок в работе</b> (анимация, 1 МБ)</summary>
+<br>
+<img src="https://raw.githubusercontent.com/moonlivedt-oss/photosMOONprojects/main/_docs/screenshots/demo.webp" alt="Лист наклеек режется по сетке, поиск по смыслу находит картинки, модель вращается в 3D" width="100%">
+</details>
+
+<img src="assets/mascot-wrench.webp" align="right" width="64" alt="">
 
 ### Ещё инструменты
 
@@ -67,7 +80,15 @@
 | <img src="https://raw.githubusercontent.com/moonlivedt-oss/photosMOONprojects/main/04%20%D0%98%D0%BA%D0%BE%D0%BD%D0%BA%D0%B8/%D0%92%D1%80%D0%B5%D0%BC%D1%8F%20%D0%B8%20%D0%BA%D0%BE%D0%BD%D0%BA%D1%83%D1%80%D1%81%D1%8B/%D0%A4%D0%B8%D0%BE%D0%BB%D0%B5%D1%82%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BD%D0%BE%D1%87%D1%8C/rocket.webp" width="28" height="28" alt=""><br>**[VS Code Launcher](https://github.com/moonlivedt-oss/VSCLwMoon)** | запускает VS Code только с нужными стеками расширений - тяжёлые языковые серверы не грузятся |
 | <img src="https://raw.githubusercontent.com/moonlivedt-oss/photosMOONprojects/main/04%20%D0%98%D0%BA%D0%BE%D0%BD%D0%BA%D0%B8/%D0%9A%D0%BE%D0%B4%20%D0%B8%20VS%20Code/%D0%A4%D0%B8%D0%BE%D0%BB%D0%B5%D1%82%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BD%D0%BE%D1%87%D1%8C/puzzle-shaped-extension.webp" width="28" height="28" alt=""><br>**[One Page Site Builder](https://github.com/moonlivedt-oss/PlagWebMoon)** | расширение VS Code: одностраничный сайт за пару минут без кода - мастер, 25 типов секций, живой предпросмотр |
 
+<img src="assets/mascot-joy.webp" align="right" width="64" alt="">
+
 ## Конкурсы, игры и сайты
+
+Соревнования по данным, конкурсные кейсы, сайты и первая игра на Godot.
+
+<details>
+<summary><b>Показать 6 проектов</b></summary>
+<br>
 
 | Проект | Что это |
 |---|---|
@@ -78,8 +99,14 @@
 | <img src="https://raw.githubusercontent.com/moonlivedt-oss/photosMOONprojects/main/04%20%D0%98%D0%BA%D0%BE%D0%BD%D0%BA%D0%B8/RPG-%D0%BB%D1%83%D1%82/%D0%A4%D0%B8%D0%BE%D0%BB%D0%B5%D1%82%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BD%D0%BE%D1%87%D1%8C/spell-book-clasp.webp" width="28" height="28" alt=""><br>**[Book Club «Страница»](https://github.com/moonlivedt-oss/BookClubMoon)** | лендинг книжного клуба: каталог, профили читателей, встроенный ридер (Vue 3, PHP, Three.js) |
 | <img src="https://raw.githubusercontent.com/moonlivedt-oss/photosMOONprojects/main/04%20%D0%98%D0%BA%D0%BE%D0%BD%D0%BA%D0%B8/%D0%A0%D0%B5%D1%82%D1%80%D0%BE-%D1%82%D0%B5%D1%85%D0%BD%D0%B8%D0%BA%D0%B0/%D0%A4%D0%B8%D0%BE%D0%BB%D0%B5%D1%82%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BD%D0%BE%D1%87%D1%8C/game-cartridge.webp" width="28" height="28" alt=""><br>**[МИРО](https://github.com/moonlivedt-oss/MIRO_beta)** | психологический хоррор от первого лица на Godot 4 - первый проект на движке |
 
----
+</details>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/divider-dark.webp">
+  <img src="assets/divider-light.webp" alt="" width="100%">
+</picture>
 
 <div align="center">
+<img src="assets/mascot-tea.webp" width="72" alt=""><br>
 <sub>Нашли баг или есть идея - пишите в Issues нужного проекта.</sub>
 </div>
