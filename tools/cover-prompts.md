@@ -66,6 +66,20 @@ A wide README banner illustration, 2:1. Left part: the title «One Page Site Bui
 Avoid: misspelled or garbled text, Latin letters in the Russian text, extra words, slogans, watermark, signature, ui screenshots, people, frames, borders, clutter behind the title
 ```
 
+### Test Menu Moon - `cover-test-menu`
+
+```text
+A wide README banner illustration, 2:1. Left part: the title «Test Menu Moon» in large bold rounded arcade-style lettering in glowing mint with a soft neon outline, and under it a smaller subtitle in Russian «Тест-меню и читы для любых игр»; generous margins, on a calm uncluttered dark area. Right part: a big crescent moon floats in the night sky and works as a cozy control room: inside its curve a small cute round blob mascot in a tiny headset sits at a chunky retro control desk full of glowing sliders, toggles and one big round dial. Soft glowing cables run from the desk to five little game worlds that hang around the moon like floating islands: a visual novel classroom with a calm anime-style student and an empty dialogue box, a pixel-art RPG village with a tiny knight and a treasure chest, a side-scrolling platformer level with coins and a jumping hero, a low-poly 3D hill with a tiny car, and an island shaped like a browser window with a little bakery on it. Each world is touched by the mascot's controls: a stopwatch hovers over the platformer and the hero leaves motion trails as if time runs faster; a big snowflake freezes a falling coin in mid-air above the village; the tiny knight walks straight through a stone wall as a translucent ghost; a dotted teleport arc jumps from one island to another; a single keyboard keycap «Shift+T» floats near the desk like a magic key. Cozy isometric toy-world illustration with a soft synthwave night glow: chunky rounded shapes, gentle rim light, game interface ideas shown as physical objects instead of screens, full of small details worth discovering on a second look. Color palette: deep indigo night background (#121433), mint glow (#38e0c8), warm orange accents, magenta pink, pale moon yellow, a lavender mascot. The text is spelled exactly as in the quotes, large and easy to read even when the image is shown small; besides the title, the subtitle and the keycap «Shift+T», nothing else is written anywhere.
+Avoid: misspelled or garbled text, Latin letters in the Russian text, extra words or labels on the islands, numbers on the controls, real game logos or characters, slogans, watermark, signature, ui screenshots, frames, borders, clutter behind the title, violence, scary mood
+```
+
+Запасной вариант, если первый выйдет перегруженным (тот же формат, проще сцена):
+
+```text
+A wide README banner illustration, 2:1. Right part: the title «Test Menu Moon» in large bold rounded lettering in deep indigo with a mint shadow, and under it a smaller subtitle in Russian «Тест-меню и читы для любых игр»; generous margins, on a calm uncluttered area. Left part: a giant retro game controller lies like a landscape under a crescent moon; its buttons are tiny planets, and on each planet a different miniature game world lives (a pixel village, a visual novel bench under sakura, a platformer with coins, a low-poly road); a small cute round blob mascot stands on the d-pad with a magic wand, and from the wand a ribbon of light curls around the planets carrying three symbols: a stopwatch, a snowflake and a dotted teleport arc. Soft paper-cut illustration with layered shadows and a slight grain, warm and toy-like. Color palette: pale lavender background (#ece8ff), deep indigo, mint (#38e0c8), coral, butter yellow. The text is spelled exactly as in the quotes, large and easy to read even when the image is shown small; nothing else is written anywhere.
+Avoid: misspelled or garbled text, Latin letters in the Russian text, extra words, numbers, real game logos or characters, slogans, watermark, signature, ui screenshots, frames, borders, clutter behind the title, scary mood
+```
+
 ## Конкурсы, игры и сайты (по желанию)
 
 ### ECUP26 - `cover-ecup26`
