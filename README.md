@@ -77,6 +77,15 @@
 <sub>расширение VS Code: одностраничный сайт за пару минут без кода - мастер, 25 типов секций, живой предпросмотр</sub>
 </td>
 </tr>
+<tr>
+<td width="33%" valign="top">
+<a href="https://github.com/moonlivedt-oss/TestMenuMoon"><img src="assets/cover-test-menu-7b04bf7.webp" alt="Test Menu Moon" width="100%"></a><br>
+<b><a href="https://github.com/moonlivedt-oss/TestMenuMoon">Test Menu Moon</a></b>&nbsp;<img src="assets/tag-new-0563bb8.webp" height="18" alt="новое" align="top"><br>
+<sub>тест-меню и читы для игр на Ren'Py, RPG Maker, HTML5, Godot, Unity и Unreal: правка переменных, скорость, телепорт, подсказки к выборам, редактор сохранений</sub>
+</td>
+<td width="33%" valign="top"></td>
+<td width="33%" valign="top"></td>
+</tr>
 </table>
 
 <details>

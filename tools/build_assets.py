@@ -55,6 +55,7 @@ COVERS = [
     "auto-translator",
     "contest-reminder",
     "site-builder",
+    "test-menu",
 ]
 
 
